@@ -6,40 +6,20 @@ import plotly.express as px
 
 # Page config
 st.set_page_config(
-    page_title="NestWorth - Prototype",
+    page_title="NestWorth - UX Prototype",
     page_icon="🏠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Minimal CSS for faster loading
 st.markdown("""
 <style>
-    .main {
-        padding: 0rem 1rem;
-    }
-    .stButton button {
-        border-radius: 8px;
-    }
+    .stButton button {border-radius: 8px;}
     div[data-testid="metric-container"] {
         background-color: #f0f2f6;
         border-radius: 10px;
         padding: 15px;
-    }
-    .fund-card {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 15px;
-    }
-    .category-chip {
-        display: inline-block;
-        background-color: #e3f2fd;
-        border-radius: 16px;
-        padding: 4px 12px;
-        margin: 2px;
-        font-size: 14px;
     }
 </style>
 """, unsafe_allow_html=True)
